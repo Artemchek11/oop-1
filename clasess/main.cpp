@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <variant>
 #include <cmath>
 
 
@@ -44,7 +43,7 @@ public:
 
     double enter_circle() const{
         return (a/2);
-    } // следует использовать только, если квадрат
+    } // следует использовать, только если квадрат
 
     double describe_circle() const{
         return std::pow(((a * a + b * b)/4), 0.5);
@@ -62,7 +61,7 @@ int main(){
     Rectangle rectangle3(5, 5);
     std::cout << "Square: " << rectangle1.square() << std::endl;
     std::cout << "Perimeter: " << rectangle1.perimeter() << std::endl;
-    std::cout << std::boolalpha << "Chech quadrant: " << rectangle1.chech_cub() << std::endl;
+    std::cout << std::boolalpha << "Chech quadrant: " << rectangle1.chech_quadrant() << std::endl;
     std::cout << "Diagonal: " << rectangle1.diagonal() << std::endl;
     std::cout << std::boolalpha << (rectangle1 == rectangle2) << std::endl;
     std::cout << "Describe: " << rectangle1.describe_circle() << std::endl;

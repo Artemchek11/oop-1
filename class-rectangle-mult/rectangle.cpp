@@ -2,10 +2,7 @@
 
 
 
-Rectangle::Rectangle(double newA, double newB){
-    a = newA;
-    b = newB;
-}
+Rectangle::Rectangle(double newA, double newB): a(newA), b(newB) {}
 
 bool Rectangle::operator > (const Rectangle& rec) const {
     return this->square() > rec.square();

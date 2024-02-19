@@ -8,10 +8,7 @@ class Rectangle{
 public:
     Rectangle() = default;
 
-    Rectangle(double newA, double newB){
-        a = newA;
-        b = newB;
-    }
+    Rectangle(double newA, double newB): a(newA), b(newB) {}
 
     bool operator > (const Rectangle& rec) const {
         return this->square() > rec.square();
